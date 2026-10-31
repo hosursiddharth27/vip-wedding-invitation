@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Wedding of Aarav &amp; Meera — Private Invitation</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;1,300&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="dust" aria-hidden="true"></canvas>
+<audio id="bgm" src="music.mp3" loop preload="auto"></audio>
+
+<div id="gate">
+  <div class="gate-box">
+    <div class="mono">A<i>&amp;</i>M</div>
+    <p class="eyebrow">Private Invitation</p>
+    <button id="enter">Tap to Enter</button>
+  </div>
+</div>
+
+<button id="sound" aria-label="Toggle music" class="off"><b></b><b></b><b></b><b></b></button>
+
+<main id="site" class="hide">
+  <header id="hero">
+    <img src="images/hero.jpg" alt="">
+    <div class="veil"></div>
+    <div class="hero-in">
+      <p class="eyebrow">The Wedding of</p>
+      <h1 class="gold" data-k="names"></h1>
+      <div class="rule"></div>
+      <p class="date" data-k="dateLine"></p>
+      <p class="eyebrow" data-k="city"></p>
+    </div>
+    <span class="scroll">Scroll</span>
+  </header>
+
+  <section id="pass" class="rv">
+    <div class="ticket">
+      <div class="t-main">
+        <p class="eyebrow">Exclusive Access</p>
+        <h2 class="gold">You Are Invited</h2>
+        <div class="grid">
+          <div><small>Date</small><b data-k="dateShort"></b></div>
+          <div><small>Venue</small><b data-k="venue"></b></div>
+          <div><small>Dress Code</small><b data-k="dress"></b></div>
+        </div>
+      </div>
+      <div class="t-stub"><small>Admit</small><b>TWO</b><small data-k="pass"></small></div>
+    </div>
+  </section>
+
+  <section id="moments">
+    <h2 class="gold rv">Moments</h2>
+    <div class="reel" id="reel"></div>
+  </section>
+
+  <section id="program">
+    <h2 class="gold rv">The Program</h2>
+    <ol id="events"></ol>
+  </section>
+
+  <section id="count" class="rv">
+    <p class="eyebrow">Counting Down</p>
+    <div class="timer" id="timer"></div>
+  </section>
+
+  <section id="rsvp" class="rv">
+    <h2 class="gold">Join Us</h2>
+    <div class="btns">
+      <a class="cta" id="wa" target="_blank" rel="noopener">Confirm Attendance</a>
+      <a class="cta ghost" id="map" target="_blank" rel="noopener">View Location</a>
+    </div>
+  </section>
+
+  <footer><div class="mono sm">A<i>&amp;</i>M</div><p class="eyebrow">With love &amp; gratitude</p></footer>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
